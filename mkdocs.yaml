@@ -1,0 +1,46 @@
+site_name: The Basic MkDocs Template
+site_url: https://www.learnpytorch.io
+site_description: Learn important machine learning concepts hands-on by writing PyTorch code.
+
+repo_url: https://github.com/JamorMoussa/mkdocs-basic-template
+repo_name: JamorMoussa/mkdocs-basic-template
+
+theme:
+  name: material
+  logo: assets/ztm-logo-and-pytorch-logo.png
+  favicon: assets/ztm-logo-and-pytorch-logo.png
+  features:
+    - navigation.instant
+    - navigation.top
+  palette:
+    primary: black
+
+markdown_extensions:
+  - meta
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
+plugins:
+ - mkdocs-jupyter:
+    include_source: True
+ - search
+ - social
+
+edit_uri: ""
+
+nav:
+  - Home: 'index.md'
+  - pages:
+    - page: 'pages/page.md'
+    - note: 'pages/page-notebook.ipynb'
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/mrdbourke
+    - icon: fontawesome/brands/github
+      link: https://github.com/mrdbourke/pytorch-deep-learning
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCr8O8l5cCX85Oem1d18EezQ
